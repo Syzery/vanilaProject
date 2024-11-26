@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <script src="app.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="appContainer">
+  <div class="appContainer">
+    <div class="functionalContainer">
         <div class="taskInputContainer">
             <input id="taskInput" class="taskInput"/>
             <button class="taskInputButton" id="taskInputButton"></button>
         </div>
         <div class="toDoListContainer">
-          <p class="toDoText">ToDo - </p>
+          <label class="toDoText">ToDo - </label>
           <div class="toDoList" id="toDoList">
             <!-- карточки js с задачами -->
           </div>
         </div>
         <div class="toDoneContainer">
-          <p class="toDoneText">toDone - </p>
+          <label class="toDoneText">toDone - </label>
           <div class="doneList" id="doneList">
               <!-- карточки js со сделаными задачами -->
           </div>
         </div>
     </div>
+  </div>
+    <script src="app.js"></script>
 </body>
 </html>

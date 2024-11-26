@@ -1,17 +1,75 @@
-
-.input_container{
-    min-height: 700px;
-    width: 100%;
+body{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    background-color: #C8DEC8;
+    padding: 139px 228px 89px 228px;
 }
 
-.task_input{
-    width: 1000px;
-    height: 50px;
+.appContainer{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: larger;
+    padding: 81px 275px 62px 275px;
+    width: 432px;
+    min-height: 796px;
+    background-color: #0D0714;
+    border-radius: 80px;
 }
+
+.functionalContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 432px;
+    min-height: 653px;
+}
+
+.taskInputContainer{
+    width: 432px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.taskInput{
+    background: none;
+    border: 1px solid #3E1671;
+    border-radius: 10px;
+    height: 40px;
+    width: 381px;
+    display: inline;
+    color: #777777;
+}
+
+.taskInputButton{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #9E78CF;
+    border: none;
+    
+}
+
+.toDoListContainer{
+    width: 432px;
+    min-height: 384px;
+    display: flex;
+    flex-direction: column;
+}
+
+.toDoText{
+    color: #FFFFFF;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 17px;
+}
+
+.toDoList{
+    display: flex;
+    flex-direction: column;
+    width: 432px;
+    min-height: 348px;
+}
+
