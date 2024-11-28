@@ -45,17 +45,18 @@ function taskCard(tasks){
     }
 }
 
-taskCard(state);
-
-document.getElementById("taskInputButton").addEventListener("click",() => {
-    let getInput = document.getElementById("taskInput").value;
-    if(getInput.split !== ''){
-        state.push({taskname: getInput});
-        taskCard(state);
-    }
-});
-
 function removeTask(index) {
     state.splice(index, 1); // Удаляем задачу из массива
     taskCard(state); // Обновляем отображение
 }
+
+taskCard(state);
+
+document.getElementById("taskInputButton").addEventListener("click", () => {
+    let getInput = document.getElementById("taskInput").value;
+    if (getInput.trim() !== '') {
+        state.push({ taskname: getInput });
+        taskCard(state);
+        document.getElementById("taskInput").value = ''; // Очищаем поле ввода
+    }
+});

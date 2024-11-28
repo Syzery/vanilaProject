@@ -88,14 +88,12 @@ body{
 .taskText{
     width: 221px;
     height: 19px;
-    font-family: Inter;
     font-size: 16px;
-    font-weight: 400;
     line-height: 19.36px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: #9E78CF;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
 }
 
 .buttonsContainer{
