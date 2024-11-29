@@ -73,3 +73,51 @@ body{
     min-height: 348px;
 }
 
+.taskCardContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 432px;
+    height: 30px;
+    background-color: #15101C;
+    padding: 22px 21px 22px 21px;
+    margin-bottom: 15px;
+    border-radius: 10px;    
+}
+
+.taskText{
+    width: 221px;
+    height: 19px;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: #9E78CF;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+.buttonsContainer{
+    width: 68px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.interactiveButton{
+    width: 30px;
+    height: 30px;
+    color: #9E78CF;
+    background-color: #15101C;
+    border: none;
+}
+
+.interactiveButton:hover{
+    width: 30px;
+    height: 30px;
+    color: #15101C;
+    background-color: #9E78CF;
+    border: none;
+    border-radius: 10px;
+}
+
+
