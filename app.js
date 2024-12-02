@@ -15,7 +15,7 @@ const state = [
 
 function taskCard(tasks){
     document.getElementById("toDoList").innerHTML = '';
-    tasks.forEach((i, index) => {
+    tasks.forEach((i, taskIndex) => {
         let card = document.createElement("div");
         let text = document.createElement("p");
         let buttonsContainer = document.createElement("div");
@@ -33,7 +33,7 @@ function taskCard(tasks){
         delButton.setAttribute("id","del");
 
         delButton.addEventListener("click", () => {
-            removeTask(index);
+            removeTask(taskIndex);
         });
 
         buttonsContainer.appendChild(acceptButton);
@@ -44,8 +44,8 @@ function taskCard(tasks){
     });
 }
 
-function removeTask(index) {
-    state.splice(index, 1); // Удаляем задачу из массива
+function removeTask(taskIndex) {
+    state.splice(taskIndex, 1); // Удаляем задачу из массива
     taskCard(state); // Обновляем отображение
 }
 
@@ -59,3 +59,5 @@ document.getElementById("taskInputButton").addEventListener("click", () => {
         document.getElementById("taskInput").value = ''; // Очищаем поле ввода
     }
 });
+
+
