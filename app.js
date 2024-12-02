@@ -15,7 +15,7 @@ const state = [
 
 function taskCard(tasks){
     document.getElementById("toDoList").innerHTML = '';
-    for (i of tasks){
+    tasks.forEach((i, index) => {
         let card = document.createElement("div");
         let text = document.createElement("p");
         let buttonsContainer = document.createElement("div");
@@ -29,20 +29,22 @@ function taskCard(tasks){
         buttonsContainer.setAttribute("class","buttonsContainer");
         acceptButton.setAttribute("class","interactiveButton");
         delButton.setAttribute("class","interactiveButton");
-        card.setAttribute("id","taskCard");
-        card.setAttribute("onClick", "removeElement()");
-        text.setAttribute("id","cardText");
+        //card.setAttribute("id","taskCard");
+        //card.setAttribute("onClick", "removeElement()");
+        //text.setAttribute("id","cardText");
         acceptButton.setAttribute("id","accept");
         delButton.setAttribute("id","del");
+
         delButton.addEventListener("click", () => {
-            removeTask(tasks);
+            removeTask(index);
         });
+
         buttonsContainer.appendChild(acceptButton);
         buttonsContainer.appendChild(delButton);
         card.appendChild(text);
         card.appendChild(buttonsContainer);
         document.getElementById("toDoList").appendChild(card);
-    }
+    });
 }
 
 function removeTask(index) {
