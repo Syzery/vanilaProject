@@ -18,7 +18,6 @@ body{
 .functionalContainer{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 432px;
     min-height: 653px;
 }
@@ -29,6 +28,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 59px;
 }
 
 .taskInput{
@@ -55,6 +55,7 @@ body{
     min-height: 384px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 60px;
 }
 
 .toDoText{
@@ -120,4 +121,21 @@ body{
     border-radius: 10px;
 }
 
+.toDoneContainer{
+    width: 432px;
+    min-height: 110px;
+    display: flex;
+    flex-direction: column;
+}
 
+.doneText{
+    width: 221px;
+    height: 19px;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: #78CFB0;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    text-decoration: line-through;
+}
