@@ -29,9 +29,6 @@ function taskCard(tasks){
         buttonsContainer.setAttribute("class","buttonsContainer");
         acceptButton.setAttribute("class","interactiveButton");
         delButton.setAttribute("class","interactiveButton");
-        //card.setAttribute("id","taskCard");
-        //card.setAttribute("onClick", "removeElement()");
-        //text.setAttribute("id","cardText");
         acceptButton.setAttribute("id","accept");
         delButton.setAttribute("id","del");
 
